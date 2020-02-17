@@ -5,5 +5,5 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('user', function() {
-   return response()->json(['name' => 'Hasan', 'email' => 'hasan@gmail.com', 'token' => '1234567890'], 200);
+   return response()->json([['name' => 'Hasan', 'email' => 'hasan@gmail.com', 'token' => '1234567890']], 200);
 });
